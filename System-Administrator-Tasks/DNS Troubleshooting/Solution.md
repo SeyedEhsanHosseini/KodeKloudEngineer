@@ -13,6 +13,7 @@ nameserver 8.8.4.4
 ## To verify the change 
 
 ```
-ping any domain/hostname. If you get “Failed to resolve host:” error, then there is something wrong in network configuration (apart from DNS).
+ping any domain/hostname. If you get “Failed to resolve host:” error,
+then there is something wrong in network configuration (apart from DNS).
 
 ```
