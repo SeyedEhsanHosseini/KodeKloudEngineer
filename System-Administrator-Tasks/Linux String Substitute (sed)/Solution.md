@@ -15,7 +15,7 @@ sudo sed '/word/d' /path/to/<file_name> /path/to/<file_name_DELETE>
 ```
 
 ```
-sudo sed '/\<word\>/replace/g' /path/to/<file_name> /path/to/<file_name_REPLACE>
+sudo sed 's/\<word\>/replace/g' /path/to/<file_name> /path/to/<file_name_REPLACE>
 ```
 
 ## To verify the changes we can use grep commnad
