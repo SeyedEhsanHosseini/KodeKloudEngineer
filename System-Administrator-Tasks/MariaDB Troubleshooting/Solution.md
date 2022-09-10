@@ -54,7 +54,7 @@ Database MariaDB is not initialized, but the directory /var/lib/mysql is not emp
 
 ```
 
-## Check the following path o see ownerships, groups and directory names
+## Check the following path to see ownerships, groups and directory names
 
 ```
 ls -la /var/run/
