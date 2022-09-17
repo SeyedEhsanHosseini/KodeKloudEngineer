@@ -31,7 +31,7 @@ cat /etc/ssh/sshd_config
 
 ```
 
-## Edit the postfix main configuration file from below path and uncomment "banner" line
+## Edit the sshd configuration file from below path and uncomment "banner" line
 
 
 ```
