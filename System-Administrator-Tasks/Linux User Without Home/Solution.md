@@ -1,4 +1,4 @@
-## Login to the respective mentioned server in the task using ssh then swith to root user
+## Login to the respective mentioned server in the task using ssh then switch to root user
 
 ```
 ssh username@server
@@ -10,5 +10,6 @@ sudo su -
 ```
 useradd -M <username>
 ```
+
 
 
