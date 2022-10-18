@@ -17,7 +17,7 @@ yum install -y httpd
 vi /etc/httpd/conf/httpd.conf
 ```
 
-#### Output:
+#### Content:
 ```
 
 Listen <port>
@@ -35,17 +35,18 @@ Header set X-Content-Type-Options nosniff
 ```
 vi /var/www/html/index.html
 ```
-
+#### Content:
 ```
 Welcome to the xFusionCorp Industries!
 ```
 
 ## Start, Enable and Restart httpd service to apply changes in configuration files
 ```
+systemctl start httpd.service
+
+systemctl enable httpd.service
 
 systemctl restart httpd.service
-
-systemctl status httpd.service
 
 ```
 
@@ -60,7 +61,7 @@ Welcome to the xFusionCorp Industries!
 ```
 ### Step 2:
 ```
-curl -i http://localhost:8083
+curl -i http://localhost:<port>
 ```
 #### Output:
 ```
