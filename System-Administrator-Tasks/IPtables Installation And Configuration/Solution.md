@@ -20,9 +20,9 @@ systemctl start iptables && systemctl enable iptables
 
 ## Add below IPtables Rules 
 
-###### replace <port> with Apache's port mentioned in the task
+###### replace \<port\> with Apache's port mentioned in the task
 
-###### replace <ip-address> with Nautilus HTTP LBR IP address from wiki page (Infrastructure Details)
+###### replace \<ip-address\> with Nautilus HTTP LBR IP address from wiki page (Infrastructure Details)
 
 ```
 iptables -A INPUT -p tcp --destination-port <port> -s <ip-address> -j ACCEPT
