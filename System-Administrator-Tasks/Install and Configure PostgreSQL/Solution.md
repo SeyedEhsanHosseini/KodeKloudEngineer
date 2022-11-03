@@ -28,7 +28,7 @@ systemctl start postgresql && systemctl enable postgresql
 #### Output:
 ```
 Created symlink from /etc/systemd/system/multi-user.target.wants/postgresql.service to /usr/lib/systemd/system/postgresql.service.
-[root@stdb01 ~]# systemctl status postgresql
+
 ● postgresql.service - PostgreSQL database server
    Loaded: loaded (/usr/lib/systemd/system/postgresql.service; enabled; vendor preset: disabled)
    Active: active (running) since Wed 2022-11-02 17:32:49 UTC; 35s ago
