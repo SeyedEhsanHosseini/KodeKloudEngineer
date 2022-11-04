@@ -28,7 +28,7 @@ systemctl start postgresql && systemctl enable postgresql
 #### Output:
 ```
 Created symlink from /etc/systemd/system/multi-user.target.wants/postgresql.service to /usr/lib/systemd/system/postgresql.service.
-[root@stdb01 ~]# systemctl status postgresql
+
 ● postgresql.service - PostgreSQL database server
    Loaded: loaded (/usr/lib/systemd/system/postgresql.service; enabled; vendor preset: disabled)
    Active: active (running) since Wed 2022-11-02 17:32:49 UTC; 35s ago
@@ -52,7 +52,7 @@ Nov 02 17:32:49 stdb01.stratos.xfusioncorp.com systemd[1]: Started PostgreSQL da
 ## and grant all privileges on database to the created user
 
 ```
-[root@stdb01 ~]# sudo -u postgres psql
+sudo -u postgres psql
 ```
 #### Output:
 ```
@@ -172,11 +172,11 @@ psql -U <DB_username> -d <DB_name> -h localhost -W
 
 #### Output must be like this:
 ```
-Password for user kodekloud_cap: 
+Password for user <DB_username>: 
 psql (9.2.24)
 Type "help" for help.
 
-kodekloud_db8=>
+<DB_name>=>
 ```
 
 
