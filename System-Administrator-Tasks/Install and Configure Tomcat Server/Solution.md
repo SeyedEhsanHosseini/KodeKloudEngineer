@@ -21,7 +21,7 @@ yum install -y tomcat
 ```
 vi /usr/share/tomcat/conf/server.xml
 ```
-#### add your desired port instead of <port> then save the file & exit
+#### add your desired port instead of /<port/> then save the file & exit
 ```
     Define a non-SSL HTTP/1.1 Connector on port 8080
     -->
