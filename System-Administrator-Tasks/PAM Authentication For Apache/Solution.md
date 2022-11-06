@@ -11,7 +11,7 @@ sudo su -
 yum --enablerepo=epel -y install mod_authnz_external pwauth
 ```
 
-## Edit "authnz_external.conf" file and Added below lines to it then save and exit
+## Edit "authnz_external.conf" file and Add below lines to it then save and exit
 ```
 vi /etc/httpd/conf.d/authnz_external.conf
 ```
