@@ -4,7 +4,7 @@ thor@jump_host ~$ cd /home/thor/ansible/
 thor@jump_host ~/ansible$ ls -l
 ```
 
-#### Output
+#### Output:
 ```
 total 8
 -rw-r--r-- 1 thor thor  36 Nov 25 19:20 ansible.cfg
@@ -49,7 +49,7 @@ vi playbook.yml
 
         group: tony
 
-        mode: "0755"
+        mode: "0777"
 
       when: inventory_hostname == "stapp01"
 
@@ -65,7 +65,7 @@ vi playbook.yml
 
         group: steve
 
-        mode: "0755"
+        mode: "0777"
 
       when: inventory_hostname == "stapp02"
 
@@ -81,7 +81,7 @@ vi playbook.yml
 
         group: banner
 
-        mode: "0755"
+        mode: "0777"
 
       when: inventory_hostname == "stapp03"
 ```      
