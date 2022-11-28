@@ -228,8 +228,6 @@ status:
   qosClass: BestEffort
   startTime: "2022-11-26T22:52:13Z"
 ```   
-```
- 
 ## Save and Exit 
 
 #### Output:
@@ -244,7 +242,6 @@ thor@jump_host ~$ kubectl get pods
 
 #### Output:
 ```
-
 NAME        READY   STATUS    RESTARTS   AGE
 webserver   2/2     Running   0          88s  
   
