@@ -33,12 +33,12 @@ REPOSITORY   TAG       IMAGE ID       CREATED       SIZE
 busybox      musl      f2e900173e30   10 days ago   1.4MB
 ```
 
-## Tag the pulled image using Docker tag
+## Tag the pulled image using docker image tag 
 ```
 docker image tag busybox:musl busybox:blog
 ```
 
-## List all imagesto validate the task:
+## List all images to validate the task:
 
 ```
 docker images
