@@ -1,5 +1,5 @@
 ## Click on the Gitea UI button on the top bar, You should be able to access the Gitea UI.
-![-](Images/1-Click-on-the-Gitea-UI-button-on-the-top-bar..png
+![-](Images/1-Click-on-the-Gitea-UI-button-on-the-top-bar.png)
 
 ### Login to Gitea server using username max and password Max_pass123.
 ![-](Images/2-Login-to-Gitea-server-using-username-max-and-password-.png)
@@ -40,7 +40,7 @@ warning: You appear to have cloned an empty repository.
 Checking connectivity... done.
 ```
 
-##Copy all files from location /usr/dba to the repository and commit/push your changes to the master branch. The commit message must be "add stories"
+## Copy all files from location /usr/dba to the repository and commit/push your changes to the master branch. The commit message must be "add stories"
 ```
 max $ cd /home/max/story_blog/
 ```
@@ -134,7 +134,7 @@ total 8
 ```
 max (max_apps)$ cp /tmp/stories/story-index-max.txt .
 ```
-## This file has a typo, which you can fix by changing the word Mooose to Mouse
+## This file has a typo, which you can fix by changing the word Mooose to Mouse.
 ```
 max (max_apps)$ vi story-index-max.txt 
 ```
@@ -181,11 +181,12 @@ After doing this, you may fix the identity used for this commit with:
 
  1 file changed, 4 insertions(+)
  create mode 100644 story-index-max.txt
- 
+``` 
  
 ``` 
  max (max_apps)$ git push -u origin max_apps
 ```
+
 ```
 Username for 'http://git.stratos.xfusioncorp.com': max
 Password for 'http://max@git.stratos.xfusioncorp.com': 
