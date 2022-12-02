@@ -1,5 +1,5 @@
 ## Click on the Gitea UI button on the top bar, You should be able to access the Gitea UI.
-![-](Images/1-Click-on-the-Gitea-UI-button-on-the-top-bar.png)
+![-](Images/1-Click-on-the-Gitea-UI-button-on-the-top-bar..png)
 
 ### Login to Gitea server using username max and password Max_pass123.
 ![-](Images/2-Login-to-Gitea-server-using-username-max-and-password-.png)
