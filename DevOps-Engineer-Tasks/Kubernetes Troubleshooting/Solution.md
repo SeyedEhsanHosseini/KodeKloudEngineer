@@ -260,11 +260,9 @@ thor@jump_host ~$ diff mysql_deployment.yml mysql_deployment_troubleshoot.yml
 ```
 1,2c1,3
 < apiVersion: apps/v1 
-< kind: PersistentVolume
 ---
 > ---
 > apiVersion: v1 
-> kind: PersistentVolume 
 
 ########################################
 
@@ -274,13 +272,6 @@ thor@jump_host ~$ diff mysql_deployment.yml mysql_deployment_troubleshoot.yml
 ---
 >   labels:
 >     type: local
-
-########################################
-
-8c9
-<   storageClassName: standard
----
->   storageClassName: standard
 
 ########################################
 
@@ -297,14 +288,12 @@ thor@jump_host ~$ diff mysql_deployment.yml mysql_deployment_troubleshoot.yml
 <   -  Retain
 < ---
 < apiVersion: apps/v1 
-< kind: PersistentVolumeClaim 
 ---
 >     path: "/mnt/data"
 >   persistentVolumeReclaimPolicy: Retain
 > 
 > ---
 > apiVersion: v1 
-> kind: PersistentVolumeClaim
 
 ########################################
 
@@ -336,13 +325,6 @@ thor@jump_host ~$ diff mysql_deployment.yml mysql_deployment_troubleshoot.yml
 
 ########################################
 
-37c39
-<     app: mysql-app
----
->     app: mysql-app
-
-########################################
-
 44,46c46,49
 <   selector:
 <     app: mysql-app
@@ -357,21 +339,8 @@ thor@jump_host ~$ diff mysql_deployment.yml mysql_deployment_troubleshoot.yml
 
 48,49c51,52
 < apiVersion: v1 
-< kind: Deployment
 ---
 > apiVersion: apps/v1
-> kind: Deployment
-
-########################################
-
-51,53c54,56
-<   name: mysql-deployment
-<   labels:
-<     app: mysql-app 
----
->   name: mysql-deployment
->   labels:
->     app: mysql-app
 
 ########################################
 
@@ -382,30 +351,14 @@ thor@jump_host ~$ diff mysql_deployment.yml mysql_deployment_troubleshoot.yml
 
 ########################################
 
-61c64
-<   template:
----
->   template:
-
-########################################
-
-63c66
-<       labels:
----
->       labels:
-
-########################################
-
 65,68c68,71
 <       tier: mysql 
 <     spec:
-<       containers: 
-<       - images: mysql:5.6 
+
 ---
 >         tier: mysql
 >     spec:
->       containers:
->       - image: mysql:5.6
+
 
 ########################################
 
@@ -436,36 +389,6 @@ thor@jump_host ~$ diff mysql_deployment.yml mysql_deployment_troubleshoot.yml
 >               key: database
 
 ########################################
-
-92c95
-<         - containerPort: 3306
----
->         - containerPort: 3306
-
-########################################
-
-95c98
-<         - name: mysql-persistent-storage 
----
->         - name: mysql-persistent-storage
-
-########################################
-
-97c100
-<       volumes:
----
->       volumes:
-
-########################################
-
-99,100c102,104
-<           persistentVolumeClaim:
-<           claimName: mysql-pv-claim
-
----
->         persistentVolumeClaim:
->            claimName: mysql-pv-claim
- 
 
 ```
 ## Overwrite contents of old manifest with new manifest using cat command
