@@ -1,18 +1,21 @@
 ## Switch to the root user on the master node 
-
+```
 thor@jump_host ~$ sudo su -
-
+```
 ## List  all the puppet modules which have been installed:
-
+```
 root@jump_host  puppet module list
-/opt/puppetlabs/puppet/modules (no modules installed)
- 
-## Install the puppetlabs-ntp module::
-
-root@jump_host ~$ puppet module install puppetlabs-ntp
-
+```
 #### Output:
-
+```
+/opt/puppetlabs/puppet/modules (no modules installed)
+``` 
+## Install the puppetlabs-ntp module::
+```
+root@jump_host ~$ puppet module install puppetlabs-ntp
+```
+#### Output:
+```
 Notice: Preparing to install into /home/thor/.puppetlabs/etc/code/modules ...
 Notice: Created target directory /home/thor/.puppetlabs/etc/code/modules
 Notice: Downloading from https://forgeapi.puppet.com ...
@@ -20,7 +23,7 @@ Notice: Installing -- do not interrupt ...
 /home/thor/.puppetlabs/etc/code/modules
 └─┬ puppetlabs-ntp (v9.2.0)
   └── puppetlabs-stdlib (v8.5.0)
-  
+```  
   
 ## Create a puppet file under the path mentioned in the task and add the following lines to it then save and exit 
   
